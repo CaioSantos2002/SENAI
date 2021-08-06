@@ -1,1 +1,1 @@
-# Olá! Seja bem vindo. Este é meu repositório que mostra um pouco da minha trajetória no senai.
+# Olá! Seja bem vindo. Este é o repositório que mostra um pouco da minha trajetória no senai.
