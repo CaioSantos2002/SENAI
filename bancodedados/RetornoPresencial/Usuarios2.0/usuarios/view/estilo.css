@@ -1,0 +1,120 @@
+/*Estilo para perfil adm*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #5f7c8a;
+}
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    background-color: #333;
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -300px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top:60px;
+}
+nav a{
+    text-decoration: none;
+}
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: 'Arial';
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+    border-bottom: 2px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+}
+
+.link:hover{
+    background-color: #050542;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+#check:checked ~ .barra nav a .link{
+    opacity: 1;
+    margin-top: 0;
+}
+form {
+	background-color: white;
+	max-width: 400px;
+	width: 70%;
+	padding: 40px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+form h3 {
+	text-align: center;
+	color: #5f7c8a;
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 20px;
+}
+form input[type="text"],
+form input[type="password"] {
+	width: 80%;
+	height: 45px;
+	border: 1px solid #ccc;
+	padding-left: 10px;
+	margin: 10px 30px;
+}
+
+form input[id="att"] {
+	width: 60%;
+	height: 30px;
+	cursor: pointer;
+	background-color: #5f7c8a;
+	color: white;
+	border: 0;
+	border-radius: 20px;
+	transition: 1s;
+	float: left;
+}
+form input[id="sair"] {
+	width: 30%;
+	height: 30px;
+	cursor: pointer;
+	background-color: #d61e17;
+	color: white;
+	border: 0;
+	border-radius: 20px;
+	transition: 1s;
+	float: right;
+}
+
+form input[id="att"]:hover {
+	background-color: #4a5f6a;
+}
+form input[id="sair"]:hover {
+	background-color: #b10b0b;
+}
+
+.msg{
+	text-align: center;
+	font-family: "Noto Sans JP", sans-serif;
+	color: #5f7c8a;
+	margin: 4px 4px 0;
+	width: 100%;
+	margin-top: 50px;
+}

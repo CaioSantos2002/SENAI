@@ -1,0 +1,28 @@
+.dia{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
+
+.dia:hover{
+	font-size:28px;
+	color:white;
+}
+
+.semana{
+	width: 420px;
+}
+
+.domingoFeriado{
+	background-color: red;
+}
+
+.diaSemana{
+	background-color: blue;
+}
+.diaDestaque{
+	background-color: orange;
+}
+h1{
+	text-align: center;
+}

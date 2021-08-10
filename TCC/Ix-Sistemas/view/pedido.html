@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="sortcut icon" href="./assets/site.jpg" type="image/jpg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <title>Ix-sistemas</title>
+    
+</head>
+
+<body onload="listaPedido()">
+    <header class="menu-principal">
+        <main>
+            <div class="header-1">
+                <div class="logo">
+                    <img src="./assets/logo.png" width="100" height="100" />
+                </div>
+                <div class="redes-sociais">
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div> 
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div style="width: 800px;" class="menu">
+                <ul>
+                    <li>
+                        <a href="./home.html">Inicío</a>
+                    </li>
+                    <li>
+                        <a href="./cardapio.html">Cardapio</a>
+                    </li>
+                    <li>
+                        <a href="./pedido.html">Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="./peddetalhes.html">Detalhe dos Pedidos</a>
+                    </li>
+                    <li>
+                        <a href="./mesa.html">Mesas</a>
+                    </li>
+                    <li>
+                        <a href="./usuario.html">Acesso de Usuários</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+                                                <!-- COMEÇO DO CARDAPIO -->
+
+<table style="max-width: 100%;padding: 2px;tab-size: inherit;padding-left: 100px;padding-right: 100px;width:100000mm;">
+    <thead>
+        <tr>
+            <th colspan="8" style="font-size: 50px;text-align:center;">Pedidos</th>
+        </tr>
+        <tr>
+            <th><h1>id_pedido<h1></th>
+            <th><h1>id_mesa<h1></th>
+            <th><h1>data<h1></th>
+            <th><h1>hora<h1></th>
+            <th><h1>status<h1></th>
+            <th><h1>obs<h1></th>
+        </tr>
+    </thead>
+        <tbody id="pedido">
+        </tbody>
+            <tfoot >
+                <tr>
+                       <form>
+                           <td></td>
+                           <td><input type="number" id="id_mesa"></td>
+                           <td><input type="text" id="data" ></td>
+                           <td><input type="text" id="hora" ></td>
+                           <td><input type="text" id="status" ></td>
+                           <td><input type="text" id="obs" ></td>     
+                           <td><button type="button" value="Criar" onclick="criaPedido()">Criar Pedido</button></td>
+                      
+                       </form>
+                </tr>
+            </tfoot>
+               <div class="msg">
+                  <p id="mensagem">Mensagens do Sistema</p>
+              </div>
+    </table>
+    <script src="pedido.js"></script>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/jquery-migrate.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

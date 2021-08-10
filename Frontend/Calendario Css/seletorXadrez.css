@@ -1,0 +1,19 @@
+.linha{
+	width:60px;
+	height:60px;
+	float:left;
+}
+.tabuleiro{
+	width: 480px;
+	
+}
+.corPrimaria{
+	background-color:beige;
+}
+.corSecundaria{
+	background-color: brown;
+}
+
+h1{
+	text-align:center;
+}

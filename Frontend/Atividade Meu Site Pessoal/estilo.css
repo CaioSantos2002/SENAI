@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  background: url('./Imagens/bg.jpg') no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+  color: #5bd8e1;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.box {
+  background: #626062;
+  padding: 4rem;
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
+  text-align: center;
+}
+
+.profile {
+  margin-top: 8rem;
+}
+
+.profile-pic {
+  border-radius: 70%;
+  margin: 0 auto 2rem auto;
+}
+
+.profile span {
+  font-size: 24px;
+}
+
+.profile p {
+  font-size: 18px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+}
+
+.redes-sociais li {
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+
+.portfolio {
+  max-width: 886px;
+  margin: 3rem 0;
+  box-sizing: border-box;
+}
+.portfolio ul {
+  margin-top: 3rem;
+}
+
+.portfolio li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: left;
+  gap: 1rem;
+  color: #aeaeae;
+}
+
+.portfolio li + li {
+  margin-top: 32px;
+}
+
+.portfolio img {
+  border-radius: 10px;
+}
+
+.portfolio h2 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: #5bd8e1;
+}
+
+.sobre {
+  max-width: 800px;
+  margin: 5rem;
+  box-sizing: border-box;
+}
+
+.sobre ul {
+  margin-top: 3rem;
+}
+
+.sobre li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  text-align: left;
+  gap: 1rem;
+  color: #aeaeae;
+}
+
+.sobre img {
+  border-radius: 10px;
+}
+
+.sobre p {
+  margin-top: 1rem;
+}
+
+.copyright {
+  font-size: 24px;
+  color: white;
+  text-shadow: 2px 2px 16px black;
+  margin-bottom: 50vh;
+}

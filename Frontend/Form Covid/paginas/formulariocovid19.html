@@ -1,0 +1,69 @@
+<DOCTYPE html>
+<html lang ="pt-br">
+	<head>
+		<meta charset = "utf-8">
+		<title>Formulário Subnotificação COVID - 19</title>
+	</head>
+	<body>
+		<table border = "0" width="800" align="center" cellspacing="0">
+			<tr>
+				<td> <img src = "../imagens/hospitaljagua.jpg" alt="Hospital Municipal de Jaguaríuna"/></td>
+			</tr>
+			
+			<tr>
+				<td> <h1 align="center">Formulário Subnotificação COVID - 19</h1></td>
+			</tr>
+		</table>
+		
+		<table border = "0" width="800" align="center" cellspacing="0">
+			<form action ="" method="GET">
+			
+				<tr>
+					<td>
+					
+						<label>Nome*</label></br></br>
+						<input type="text" name="nome" id="nome" required maxlength="128" minlength="8" autofocus/> </br></br>
+					
+						<label>CEP*</label></br></br>
+						<input type="text" name="cep" id="cep" required maxlength="9" minlength="9" pattern="[0-9]{5}[\-]?[0-9]{3}"/> </br></br>
+					
+						<label> Selecione os Sintomas </label></br></br>
+						<input type="checkbox" name="sintomas" value="dorCabeca"/>Dor de Cabeça</br></br>
+						<input type="checkbox" name="sintomas" value="dorBarriga"/>Dor de Barriga</br></br>
+						<input type="checkbox" name="sintomas" value="dorGarganta"/>Dor de Garganta</br></br>
+						<input type="checkbox" name="sintomas" value="dorResfriado"/>Resfriado</br></br>
+						
+						Todos os campos marcados com * são obrigatórios
+						
+					</td>
+					
+					<td width="2%"><div style="border-left:1px solid #000;height:400px"></div> </td>
+					<td width="49%"> 
+						
+						
+							<label>Por quantos dias apresenta os sintomas ?</label></br></br>
+							<input type ="number" name="sintomas" id="sintomas" required/></br></br>
+						
+							<label> Teve contato com alguém confirmado com o COVID - 19 ? </label></br></br>
+					
+							<select name="opcoes" id="opcoes">
+							<option value="Sim">Sim</option>
+							<option value="Não">Não</option>
+							</select></br></br>
+						
+							<label>Telefone* (Somente números)</label></br></br>
+							<input type="number" name="Telefone" id="tel" required maxlength="11" minlength="11" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}"/> </br></br>
+							
+							
+							<label>Diga-nos mais sobre suas condições sobre o COVID-19:</label>
+							<textarea cols="70" rows="10" name="condicao" id="condicao" maxlenght="300"></textarea>
+							
+							
+							<input type="submit" id="btEnviar" value="Enviar"/>
+							
+						</td>
+					</tr>
+			</form>	
+		</table>
+	</body>
+</html>

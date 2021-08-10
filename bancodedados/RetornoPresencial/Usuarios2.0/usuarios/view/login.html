@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+	</head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #5f7c8a;
+		}
+		form {
+			background-color: white;
+			max-width: 420px;
+			width: 80%;
+			padding: 80px;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		form h3 {
+			text-align: center;
+			color: #5f7c8a;
+			font-family: "Noto Sans JP", sans-serif;
+		}
+		form input[type="text"],
+		form input[type="password"] {
+			width: 105%;
+			height: 45px;
+			border: 1px solid #ccc;
+			padding-left: 10px;
+			margin: 10px 0;
+		}
+
+		form input[type="button"] {
+			width: 105%;
+			height: 40px;
+			cursor: pointer;
+			background-color: #5f7c8a;
+			color: white;
+			border: 0;
+			border-radius: 20px;
+			transition: 1s;
+		}
+
+		form input[type="button"]:hover {
+			background-color: #4a5f6a;
+		}
+		form input[type="text"]:focus {
+			outline: 0;
+		}
+		form input[type="password"]:focus {
+			outline: 0;
+		}
+
+		div {
+			text-align: center;
+			font-family: "Noto Sans JP", sans-serif;
+			color: #5f7c8a;
+			margin: 10px 10px 0;
+			width: 100%;
+		}
+	</style>
+
+	<body>
+		<form method="POST" action="../src/controll/processa.usuario.php">
+			<h3>Login</h3>
+			<br />
+			<input
+				id="login"
+				type="text"
+				placeholder="Seu usuário..."
+				
+			/>
+			<input
+				id="senha"
+				type="password"
+				placeholder="Sua senha..."
+			/>
+			<br />
+			<br />
+			<input type="button" value="Entrar" onclick="acessar()" /></td>
+			<br />
+			<br />
+			<div class="msg">
+				<p id="mensagem">Mensagens do Sistema</p>
+			</div>
+		</form>
+		<script src="login.js"></script>
+	</body>
+	</html>
