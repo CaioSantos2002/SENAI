@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+}
+
+#container-imagem {
+   z-index: 1;
+   position: absolute;
+   height: 100vh;
+   width: 100%;
+   background: url('MEGASENA.jpg');
+   background-size:cover;
+   
+}
+
+.titulo {
+    z-index: 2;
+    position: absolute;
+    height: 130px;
+    margin-top: 50px;
+    margin-left: 315px;
+}
+
+.conteudo{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.saida{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+label{
+    margin-top: 30px;
+    background-color: #fff;
+    min-width: 475px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input{
+    background-color: #E5E4E2;
+    min-width: 475px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+button{
+    min-width: 500px;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #32CD32;
+    color: #fff;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #008000;
+}

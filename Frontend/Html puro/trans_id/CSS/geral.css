@@ -1,0 +1,120 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #919191;
+	background-color: #232323;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4, h5 ,h6 {
+	margin: 0 0 30px 0;
+	font-size: 1.8em;
+	font-family: "CaviarDreamsBold", Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+/*--------------Header------------------*/
+#header {
+	width: 980px;
+	height: 50px;
+	padding: 40px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header hgroup {
+	display: block;
+	float: left;
+	width: auto;
+	clear: right;
+}
+#header hgroup h1, #header hgroup h2 {
+	margin: 0;
+	font-weight: normal;
+	text-transform: none;
+}
+#header hgroup h1 {
+	font-size: 2em;
+}
+#header hgroup h2 {
+	font-size: 1em;
+}
+#header #header-contato {
+	display: block;
+	float: right;
+	width: auto;
+	clear: right;
+}
+#header #header-contato ul {
+	margin-top: 15px;
+}
+#header #header-contato li {
+	display: inline;
+	margin: 0 0 0 15px;
+	padding: 0 0 0 15px;
+	border-left: 1px solid #C0BAB6;
+}
+#header #header-contato li:first-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+/*--------------------topo--------------------------------*/
+div#topo {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	word-wrap: break-word;	/*---------texto em caixa maiuscula---------*/
+}
+#topo, #topo a {
+	color: #C0BAB6;
+	background-color: #333333;
+}
+a {
+	color: #FF9900;
+	outline: none;
+	text-decoration: none;
+}
+i {
+	vertical-align: middle;
+}
+
+/*----------------menu----------------*/
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	list-style: none;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+#topnav {
+	width: 980px;
+	height: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	color: #C0BAB6;
+	background-color: #232323;
+}
+#topnav li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 30px 0 0;
+	padding: 0;
+}
+#topnav li a {
+	display: block;
+	padding: 20px 0;
+}
+#topnav a {
+	color: #C0BAB6;
+	background-color: #232323;
+	font-weight: bold;
+}
+#topnav li.active a, #topnav a:hover {
+	color: #FF9900;
+}
+
+/*novo*/

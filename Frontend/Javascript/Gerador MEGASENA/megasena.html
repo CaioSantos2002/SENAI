@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gerador Mega-Sena</title>
+</head>
+
+<body>
+   
+    <img class="titulo" src="logo-megasena.png">
+    <div id="container-imagem"></div>
+    <div class="conteudo">
+        <label> Quantidade de jogos [1 ou 2] e números [de 6 a 15]:</label>
+        <input type="text" id="entrada" placeholder="Ex: 2 7 [2 jogos de 7 números]" />
+        <button onclick="geraJogos()">Gera Jogos</button>
+    </div>
+    <div class="saida" id="saida"></div>
+    <script src="gerador.js"></script>
+</body>
+
+</html>
